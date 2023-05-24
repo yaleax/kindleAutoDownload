@@ -19,6 +19,9 @@
 一 访问亚马逊管理我的内容和设备地址
 
 [Link](https://www.amazon.cn/hz/mycd/digital-console/contentlist/booksAll/dateDsc)){:target="_blank"} 
+
+[GitHub](https://github.com/ "target:_blank")
+
  
 
 二 进入控制台
