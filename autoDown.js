@@ -69,7 +69,7 @@ function showNotification() {
     });
 }  
 
-// 主程序，对页面进行下载操作
+// 主程序
 function repeatProcess() {
     // 片段当前页面所在页数
     var activePageItem = document.querySelector('.page-item.active').textContent;
