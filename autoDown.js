@@ -4,7 +4,7 @@
 function downloadItems(ids, i = 0) {
     if (i >= ids.length) {
         // 所有项目都已下载，请检查是否有其他页面
-        setTimeout(checkNextPage, 1000);  // 在检查下一页之前增加一个延迟
+        setTimeout(checkNextPage, 1000);  // 检查下一页 1秒
     } else {
         // 构建ID
         let DOWNLOAD_AND_TRANSFER_ACTION = "DOWNLOAD_AND_TRANSFER_ACTION_" + ids[i];
