@@ -149,7 +149,7 @@ repeatProcess();
 
 ![Screenshot 2023-05-24 at 11 40 45](https://github.com/yaleax/kindleAutoDownload/assets/5234415/cd697a74-368b-4f40-9e96-dba2a94d686d)
 
-这里面的calibre是用来去除DMR保护和转化更是，这样你购买的图书，就可以在任何设备观看了。
+这里面的calibre是用来去除DMR保护和转化图书文件格式，这样你购买的图书，就可以在任何设备观看了。
 
 ## 注意事项：
 
