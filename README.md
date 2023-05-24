@@ -32,7 +32,7 @@
 
 [https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/autoDown.js](https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/autoDown.js)
 
-复制js代码到console然后按回车键enter/return,程序就会开始运行，当下载开始时，你将看到下面提示。
+复制js代码到console然后按回车键（enter/return）,程序就会开始运行，当下载开始时，你将看到下面提示。
 
 ![Screenshot 2023-05-24 at 13 35 29](https://github.com/yaleax/kindleAutoDownload/assets/5234415/6cc8cb1b-576d-4cf5-a366-797d6a866a36)
 
