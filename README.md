@@ -17,7 +17,7 @@
 使用方法
 
 一 访问亚马逊管理我的内容和设备地址
-https://www.amazon.cn/hz/mycd/digital-console/contentlist/booksAll/dateDsc
+https://www.amazon.cn/hz/mycd/digital-console/contentlist/booksAll/dateDsc {:target="_blank"} 
 
 二 进入控制台
 在 Google Chrome 中打开浏览器控制台（也称为开发者工具），你可以按照以下步骤进行：
@@ -30,7 +30,7 @@ https://www.amazon.cn/hz/mycd/digital-console/contentlist/booksAll/dateDsc
 打开控制台后，你可以在 "Console" 标签下看到控制台，可以在这里输入 JavaScript 代码并运行。
 
 三 复制js代码
-https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/autoDown.js
+https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/autoDown.js {:target="_blank"} 
 
 程序会自动下载你所有的图书，完后后会有提示。
 
@@ -43,7 +43,7 @@ https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/autoDown.js
 
 2.如果有的图书不能手动下载，这个程序将结束，你需要重新运行这个程序。
 
-3.我还为大家提供了，只下载当前页的代码，这个是初稿。如果你有需要可以点击https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/initial.js
+3.我还为大家提供了，只下载当前页的代码，这个是初稿。如果你有需要可以点击https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/initial.js {:target="_blank"} 
 
 4.如果你长时间不在内容管理页面，JavaScript会暂停，你再次返回，它就能继续工作了。
 
