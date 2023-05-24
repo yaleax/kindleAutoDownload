@@ -6,7 +6,7 @@ function downloadItems(ids, i = 0) {
         // 所有项目都已下载，请检查是否有其他页面
         setTimeout(checkNextPage, 1000);  // 检查下一页 1秒
     } else {
-        // 构建ID
+        // 构建元素
         let DOWNLOAD_AND_TRANSFER_ACTION = "DOWNLOAD_AND_TRANSFER_ACTION_" + ids[i];
         let download_and_transfer_list = "download_and_transfer_list_" + ids[i] + "_0";
         let DOWNLOAD_AND_TRANSFER_ACTION_CONFIRM = "DOWNLOAD_AND_TRANSFER_ACTION_" + ids[i] + "_CONFIRM";
