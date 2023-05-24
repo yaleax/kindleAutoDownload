@@ -1,5 +1,29 @@
 //最终版本 v5.1
 
+// 主程序
+function repeatProcess() {
+    // 片段当前页面所在页数
+    var activePageItem = document.querySelector('.page-item.active').textContent;
+    // 获得书籍的id号码并生成列表
+    let elements = document.querySelectorAll('[id^="content-title-"]');
+    let ids = [];
+    for (let i = 0; i < elements.length; i++) {
+        let id = elements[i].id;
+        let uniquePart = id.replace("content-title-", ""); // 这将从ID中删除 "content-title-"。
+        ids.push(uniquePart);
+    }
+
+    // 点击全部图书的，查看更多
+    for (let i = 0; i < ids.length; i++) {
+        let button = document.getElementById("mobile-content-see-more-actions");
+        if (button) {
+            button.click();
+        }
+    }
+    // 下载
+    downloadItems(ids);
+}
+
 // 自动下载程序
 function downloadItems(ids, i = 0) {
     if (i >= ids.length) {
@@ -35,7 +59,7 @@ function checkNextPage() {
         document.getElementById("page-" + nextPageNumber).click();
         setTimeout(repeatProcess, 2000);  // 延迟一段时间后再重复这个过程，让页面加载。
     } else {
-				// 全部下载完成窗提示
+        // 全部下载完成窗提示
         showNotification();
     }
 }
@@ -68,30 +92,6 @@ function showNotification() {
         notificationElement.style.display = "none";  
     });
 }  
-
-// 主程序
-function repeatProcess() {
-    // 片段当前页面所在页数
-    var activePageItem = document.querySelector('.page-item.active').textContent;
-    // 获得书籍的id号码并生成列表
-    let elements = document.querySelectorAll('[id^="content-title-"]');
-    let ids = [];
-    for (let i = 0; i < elements.length; i++) {
-        let id = elements[i].id;
-        let uniquePart = id.replace("content-title-", ""); // 这将从ID中删除 "content-title-"。
-        ids.push(uniquePart);
-    }
-
-    // 点击全部图书的，查看更多
-    for (let i = 0; i < ids.length; i++) {
-        let button = document.getElementById("mobile-content-see-more-actions");
-        if (button) {
-            button.click();
-        }
-    }
-    // 下载
-    downloadItems(ids);
-}
 
 // 开始执行
 repeatProcess();
