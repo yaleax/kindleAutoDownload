@@ -1,5 +1,6 @@
-# kindleAutoDownload
-自动下载亚马逊中国kindle的图书
+# kindleAutoDownload 自动下载亚马逊中国kindle的图书
+
+
 
 
 亚马逊将于一年之后即2023年6月30日，在中国停止Kindle电子书店的运营。
