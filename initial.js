@@ -1,4 +1,4 @@
-v1.0正式版 下载当前页版本
+//v1.0正式版 下载当前页版本
 //片段当前页面所在页数
 var activePageItem = document.querySelector('.page-item.active').textContent
 
