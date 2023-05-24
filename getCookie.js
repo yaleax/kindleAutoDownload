@@ -1,3 +1,9 @@
+// 获取 cookie  
+if (typeof cookie === 'undefined') {
+        cookie = document.cookie;
+    }
+    console.log("Cookie: ", cookie); 
+
 // 获取 CSRF token
 if (typeof csrfToken === 'undefined') {
     let csrfToken;
