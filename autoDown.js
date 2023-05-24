@@ -18,7 +18,7 @@ function repeatProcess() {
             button.click();
         }
     }
-    // 下载
+    // 把列表ids放到自动下载程序里执行
     downloadItems(ids);
 }
 
