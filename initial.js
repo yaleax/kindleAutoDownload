@@ -43,5 +43,3 @@ for (let i = 0; i < ids.length; i++) {
 
   }, i * 3000); // The delay is i * 3000 milliseconds, or i * 3 seconds
 }
-
-document.getElementById("page-" + (Number(activePageItem) + 1)).click()
