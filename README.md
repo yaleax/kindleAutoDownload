@@ -23,7 +23,7 @@ initial.js  ---- 第一版，可以下载当前页面的所有图书
 testNode.js  ---- node.js 环境运行，未完成
 
 
-使用方法
+**使用方法**
 
 一 访问亚马逊管理我的内容和设备地址https://www.amazon.cn/hz/mycd/digital-console/contentlist/booksAll/dateDsc
 
@@ -45,7 +45,7 @@ https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/autoDown.js
 ![Screenshot 2023-05-24 at 11 40 45](https://github.com/yaleax/kindleAutoDownload/assets/5234415/cd697a74-368b-4f40-9e96-dba2a94d686d)
 
 
-注意：
+**注意**：
 
 1.此代码只能在mobile模式下可以运行。拖动开发者工具窗口左边框，向左，使浏览窗口变小，就会进入到mobile模式。
 
