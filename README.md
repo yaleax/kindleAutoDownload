@@ -1,4 +1,4 @@
-# kindleAutoDownload 自动下载亚马逊中国kindle的图书
+# 一键自动下载亚马逊中国kindle的图书JavaScript脚本 2023年最新适用
 
 
 
