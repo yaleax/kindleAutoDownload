@@ -1,0 +1,2 @@
+# kindleAutoDownload
+自动下载亚马逊中国kindle的图书
