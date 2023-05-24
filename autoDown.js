@@ -2,7 +2,7 @@
 
 // 主程序
 function repeatProcess() {
-    // 获得书籍的id号码并生成列表
+    // 获得书籍的id号码并生成列表ids
     let elements = document.querySelectorAll('[id^="content-title-"]');
     let ids = [];
     for (let i = 0; i < elements.length; i++) {
@@ -11,7 +11,7 @@ function repeatProcess() {
         ids.push(uniquePart);
     }
 
-    // 点击全部图书的，查看更多
+    // 点击当前页面，全部图书的，查看更多
     for (let i = 0; i < ids.length; i++) {
         let button = document.getElementById("mobile-content-see-more-actions");
         if (button) {
