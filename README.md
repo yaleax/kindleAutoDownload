@@ -10,6 +10,18 @@
 
 ![forms-pc-1500-0531-1](https://github.com/yaleax/kindleAutoDownload/assets/5234415/d6f30003-f93f-4e6d-9fc0-8dd617700d2d)
 
+文件结构
+
+README.md    ---- 说明
+
+autoDown.js  ---- 主程序
+
+getCookie.js ---- 获得cookie,用不上
+
+initial.js  ---- 第一版，可以下载当前页面的所有图书
+
+testNode.js  ---- node.js 环境运行，未完成
+
 
 使用方法
 
