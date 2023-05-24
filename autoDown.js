@@ -64,10 +64,10 @@ function showNotification() {
 
     let closeButton = document.getElementById('notification-close');
     closeButton.addEventListener('click', function() {
-        // 在这里添加你希望执行的动作
-        notificationElement.style.display = "none";  // 例如：关闭通知
+        // 关闭通知
+        notificationElement.style.display = "none";  
     });
-}  // 这里添加了尾部括号，结束showNotification函数
+}  
 
 // 对新页进行下载操作
 function repeatProcess() {
