@@ -31,4 +31,4 @@ https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/autoDown.js
 
 程序会自动下载你所有的图书
 
-注意：此代码只能在mobile模式下可以运行。
+注意：此代码只能在mobile模式下可以运行。拖动开发者工具窗口左边框，向左，使浏览窗口变小，就会进入到mobile模式。
