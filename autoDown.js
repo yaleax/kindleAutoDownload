@@ -3,7 +3,7 @@
 // 主程序
 function repeatProcess() {
     // 片段当前页面所在页数
-    var activePageItem = document.querySelector('.page-item.active').textContent;
+    //var activePageItem = document.querySelector('.page-item.active').textContent;
     // 获得书籍的id号码并生成列表
     let elements = document.querySelectorAll('[id^="content-title-"]');
     let ids = [];
