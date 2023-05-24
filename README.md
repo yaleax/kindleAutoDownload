@@ -16,17 +16,7 @@
 
 使用方法
 
-一 访问亚马逊管理我的内容和设备地址
-
-[Link](https://www.amazon.cn/hz/mycd/digital-console/contentlist/booksAll/dateDsc)){:target="_blank"} 
-
-[GitHub](https://github.com/ "target:_blank")
-
-
-[https://www.amazon.cn/hz/mycd/digital-console/contentlist/booksAll/dateDsc](https://www.amazon.cn/hz/mycd/digital-console/contentlist/booksAll/dateDsc){:target="_blank"}
-
-
- 
+一 访问亚马逊管理我的内容和设备地址https://www.amazon.cn/hz/mycd/digital-console/contentlist/booksAll/dateDsc
 
 二 进入控制台
 在 Google Chrome 中打开浏览器控制台（也称为开发者工具），你可以按照以下步骤进行：
