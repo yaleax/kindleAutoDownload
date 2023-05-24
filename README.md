@@ -40,7 +40,7 @@
 
 1. 此代码只能在mobile模式下可以运行。向左拖拽开发者工具窗口左边框，使浏览窗口变小，就会进入到mobile模式。
 2. 如果有的图书不能手动下载，这个程序将结束，你需要重新运行这个程序。
-3. 我还为大家提供了，只下载当前页的代码，这个是初稿。如果你有需要可以点击[这里](https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/initial.js)
+3. 我还为大家提供了，只下载当前页的代码，这个是初稿。如果你有需要可以点击[https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/initial.js](https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/initial.js)
 4. 如果你长时间不在内容管理页面，JavaScript会暂停，你再次返回，它就能继续工作了。
 
 ## GPT-4的建议
