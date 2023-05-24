@@ -16,7 +16,7 @@
 
 - README.md ---- 说明
 - autoDown.js ---- 主程序
-- getCookie.js ---- 获取cookie的程序（实际未使用）
+- getCookie.js ---- 获取cookie的程序（为node.js版本准备）
 - initial.js ---- 初始版本，可下载当前页面的所有图书
 - testNode.js ---- node.js环境下运行的测试版本，尚未完成
 
