@@ -49,3 +49,41 @@ async function checkNextPage() {
 
 // 开始执行
 checkNextPage();
+
+const puppeteer = require('puppeteer');
+
+async function repeatProcess() {
+    // 启动浏览器
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+
+    // 打开页面
+    await page.goto('http://example.com');
+
+    // 片段当前页面所在页数
+    var activePageItem = await page.$eval('.page-item.active', el => el.textContent);
+
+    // 获得书籍的id号码并生成列表
+    let elements = await page.$$('[id^="content-title-"]');
+    let ids = [];
+    for (let i = 0; i < elements.length; i++) {
+        let id = elements[i]._remoteObject.description;
+        let uniquePart = id.replace("content-title-", ""); // 这将从ID中删除 "content-title-"。
+        ids.push(uniquePart);
+    }
+
+    // 点击全部图书的，查看更多
+    for (let i = 0; i < ids.length; i++) {
+        let button = await page.$('#mobile-content-see-more-actions');
+        if (button) {
+            await button.click();
+        }
+    }
+
+    // 下载
+    await downloadItems(ids);
+
+    // 关闭浏览器
+    await browser.close();
+}
+
