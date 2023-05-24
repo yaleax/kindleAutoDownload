@@ -32,7 +32,7 @@
 
 [https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/autoDown.js](https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/autoDown.js)
 
-程序会自动下载你所有的图书，完后后会有提示。
+复制js代码到console然后按回车键enter/return,程序就会开始运行，你将看到下载成功提示。当所有图书都下载完成，你会看到下面的提示。
 
 ![Screenshot 2023-05-24 at 11 40 45](https://github.com/yaleax/kindleAutoDownload/assets/5234415/cd697a74-368b-4f40-9e96-dba2a94d686d)
 
