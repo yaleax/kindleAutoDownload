@@ -1,8 +1,8 @@
-//v1.0正式版 下载当前页版本
-//片段当前页面所在页数
-var activePageItem = document.querySelector('.page-item.active').textContent
+//正式版 v2.0 下载当前页面
+// 片段当前页面所在页数
+var activePageItem = document.querySelector('.page-item.active').textContent;
 
-//获得书籍的id号码并生成列表
+// 获得书籍的id号码并生成列表
 let elements = document.querySelectorAll('[id^="content-title-"]');
 
 // Create an array to store the unique parts of the ids
@@ -18,7 +18,7 @@ for (let i = 0; i < elements.length; i++) {
 // 打印ids
 //console.log(ids);
 
-//打开全部更多
+// 打开全部更多
 for (let i = 0; i < ids.length; i++) {
     let button = document.getElementById("mobile-content-see-more-actions");
     if (button) {
@@ -39,7 +39,19 @@ for (let i = 0; i < ids.length; i++) {
     document.getElementById(DOWNLOAD_AND_TRANSFER_ACTION).click();
     document.getElementById(download_and_transfer_list).click();
     document.getElementById(DOWNLOAD_AND_TRANSFER_ACTION_CONFIRM).click();
-    document.getElementById("notification-close").click();
+
+    // Add a delay before closing the notification
+    setTimeout(function() {
+      document.getElementById("notification-close").click();
+
+      // Check if it's the last iteration of the loop
+      if (i === ids.length - 1) {
+        // If it's the last iteration, add another setTimeout to click the next page button after the last download is initiated
+        setTimeout(function() {
+          document.getElementById("page-" + (Number(activePageItem) + 1)).click();
+        }, 3000);
+      }
+    }, 1000);  // Adjust the delay as needed
 
   }, i * 3000); // The delay is i * 3000 milliseconds, or i * 3 seconds
 }
