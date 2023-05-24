@@ -22,6 +22,10 @@
 
 [GitHub](https://github.com/ "target:_blank")
 
+
+[https://www.amazon.cn/hz/mycd/digital-console/contentlist/booksAll/dateDsc](https://www.amazon.cn/hz/mycd/digital-console/contentlist/booksAll/dateDsc){:target="_blank"}
+
+
  
 
 二 进入控制台
