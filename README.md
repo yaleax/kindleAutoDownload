@@ -38,7 +38,9 @@ https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/autoDown.js
 
 
 注意：
+
 1.此代码只能在mobile模式下可以运行。拖动开发者工具窗口左边框，向左，使浏览窗口变小，就会进入到mobile模式。
+
 2.如果你长时间不在内容管理页面，JavaScript会暂停，你再次返回，它就能继续工作了。
 
 
