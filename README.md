@@ -47,7 +47,7 @@ function repeatProcess() {
         ids.push(uniquePart);
     }
 
-    // 点击当前页面，全部图书的，查看更多
+    // 点击当前页面，全部图书的，查看更多（适配移动界面，可以精简掉）
     for (let i = 0; i < ids.length; i++) {
         let button = document.getElementById("mobile-content-see-more-actions");
         if (button) {
@@ -70,7 +70,7 @@ function downloadItems(ids, i = 0) {
         let DOWNLOAD_AND_TRANSFER_ACTION_CONFIRM = "DOWNLOAD_AND_TRANSFER_ACTION_" + ids[i] + "_CONFIRM";
         
         // 点击元素
-        document.getElementById(DOWNLOAD_AND_TRANSFER_ACTION).click();
+        document.getElementById(DOWNLOAD_AND_TRANSFER_ACTION).click(); // 这里可以被精简掉
         document.getElementById(download_and_transfer_list).click();
         document.getElementById(DOWNLOAD_AND_TRANSFER_ACTION_CONFIRM).click();
 
