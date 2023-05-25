@@ -47,7 +47,7 @@ function repeatProcess() {
         ids.push(uniquePart);
     }
 
-    // 点击当前页面，全部图书的，查看更多（适配移动界面，可以精简掉）
+    // 点击当前页面，全部图书的，查看更多
     for (let i = 0; i < ids.length; i++) {
         let button = document.getElementById("mobile-content-see-more-actions");
         if (button) {
@@ -70,7 +70,7 @@ function downloadItems(ids, i = 0) {
         let DOWNLOAD_AND_TRANSFER_ACTION_CONFIRM = "DOWNLOAD_AND_TRANSFER_ACTION_" + ids[i] + "_CONFIRM";
         
         // 点击元素
-        document.getElementById(DOWNLOAD_AND_TRANSFER_ACTION).click(); // 这里可以被精简掉
+        document.getElementById(DOWNLOAD_AND_TRANSFER_ACTION).click();
         document.getElementById(download_and_transfer_list).click();
         document.getElementById(DOWNLOAD_AND_TRANSFER_ACTION_CONFIRM).click();
 
@@ -116,7 +116,7 @@ function showNotification() {
         <div id="success_d0" class="Notification-module_message_heading_container__2R3WZ">
             <span><a href="https://calibre-ebook.com/download" rel="noopener nofollow" target="_blank">如果你想删除DRM，请去Calibre官方下载页面</a></span>
         </div>
-    </div>`;
+       </div>`;
 
     document.body.appendChild(notificationElement);
 
@@ -125,7 +125,20 @@ function showNotification() {
         // 关闭通知
         notificationElement.style.display = "none";  
     });
-}  
+
+    // 创建全屏覆盖的div元素
+    let backdropElement = document.createElement('div');
+    backdropElement.className = "Notification-module_module_backdrop__104tk";
+
+    // 将全屏覆盖的div元素添加到body中
+    document.body.appendChild(backdropElement);
+
+    closeButton.addEventListener('click', function() {
+        // 关闭全屏覆盖的div元素
+        backdropElement.style.display = "none";  
+    });
+}
+
 
 // 开始执行
 repeatProcess();
