@@ -80,7 +80,7 @@ function showNotification() {
         <div id="success_d0" class="Notification-module_message_heading_container__2R3WZ">
             <span><a href="https://calibre-ebook.com/download" rel="noopener nofollow" target="_blank">如果你想删除DRM，请去Calibre官方下载页面</a></span>
         </div>
-    </div>`;
+       </div>`;
 
     document.body.appendChild(notificationElement);
 
@@ -89,7 +89,20 @@ function showNotification() {
         // 关闭通知
         notificationElement.style.display = "none";  
     });
-}  
+
+    // 创建全屏覆盖的div元素
+    let backdropElement = document.createElement('div');
+    backdropElement.className = "Notification-module_module_backdrop__104tk";
+
+    // 将全屏覆盖的div元素添加到body中
+    document.body.appendChild(backdropElement);
+
+    closeButton.addEventListener('click', function() {
+        // 关闭全屏覆盖的div元素
+        backdropElement.style.display = "none";  
+    });
+}
+
 
 // 开始执行
 repeatProcess();
