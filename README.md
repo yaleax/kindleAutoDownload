@@ -160,8 +160,7 @@ repeatProcess();
 这里面的calibre是用来去除DMR保护和转化图书文件格式，这样你购买的图书，就可以在任何设备观看了。
 
 ## 注意事项：
-
-1. 此脚本只能在mobile模式下运行。要进入mobile模式，只需向左拖拽开发者工具窗口左边框，使浏览窗口变小即可。
+~~1. 此脚本只能在mobile模式下运行。要进入mobile模式，只需向左拖拽开发者工具窗口左边框，使浏览窗口变小即可。
 2. 如果有的图书无法手动下载，程序将中止，你需要重新运行程序。
 3. 我也为大家提供了只下载当前页的代码，这是初始版本。如果需要可以点击：[https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/initial.js](https://raw.githubusercontent.com/yaleax/kindleAutoDownload/main/initial.js)
 4. 如果你长时间未在内容管理页面，JavaScript会暂停。当你再次回到页面，它将会继续运行。这可能是由于浏览器后台标签页优化机制导致的。解决方案可能包括：
