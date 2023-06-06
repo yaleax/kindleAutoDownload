@@ -1,4 +1,4 @@
-//最终版本 v5.1
+//最终版本 v5.2
 
 // 主程序
 function repeatProcess() {
@@ -6,6 +6,9 @@ function repeatProcess() {
     let elements = document.querySelectorAll('[id^="content-title-"]');
     let ids = [];
     for (let i = 0; i < elements.length; i++) {
+        if (elements[i].parentElement.textContent.includes("样章")) {
+            continue
+        }
         let id = elements[i].id;
         let uniquePart = id.replace("content-title-", ""); // 这将从ID中删除 "content-title-"。
         ids.push(uniquePart);
@@ -32,18 +35,26 @@ function downloadItems(ids, i = 0) {
         let DOWNLOAD_AND_TRANSFER_ACTION = "DOWNLOAD_AND_TRANSFER_ACTION_" + ids[i];
         let download_and_transfer_list = "download_and_transfer_list_" + ids[i] + "_0";
         let DOWNLOAD_AND_TRANSFER_ACTION_CONFIRM = "DOWNLOAD_AND_TRANSFER_ACTION_" + ids[i] + "_CONFIRM";
-        
-        // 点击元素
-        document.getElementById(DOWNLOAD_AND_TRANSFER_ACTION).click();
-        document.getElementById(download_and_transfer_list).click();
-        document.getElementById(DOWNLOAD_AND_TRANSFER_ACTION_CONFIRM).click();
+
+        // 获取元素
+        let actionElement = document.getElementById(DOWNLOAD_AND_TRANSFER_ACTION);
+        let listElement = document.getElementById(download_and_transfer_list);
+        let confirmElement = document.getElementById(DOWNLOAD_AND_TRANSFER_ACTION_CONFIRM);
+
+        // 检查元素存在并点击
+        if(actionElement) actionElement.click();
+        if(listElement) listElement.click();
+        if(confirmElement) confirmElement.click();
 
         // 在关闭通知前增加一个延迟
         setTimeout(function() {
-          document.getElementById("notification-close").click();
-          setTimeout(function() {
-            downloadItems(ids, i + 1);  // 继续下一步下载
-          }, 2000);  // 在下次下载前增加一个延迟
+          let notificationClose = document.getElementById("notification-close");
+          if(notificationClose) {
+            notificationClose.click();
+            setTimeout(function() {
+              downloadItems(ids, i + 1);  // 继续下一步下载
+            }, 2000);  // 在下次下载前增加一个延迟
+          }
         }, 1000);
     }
 }
