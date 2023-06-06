@@ -44,6 +44,7 @@ function repeatProcess() {
     let elements = document.querySelectorAll('[id^="content-title-"]');
     let ids = [];
     for (let i = 0; i < elements.length; i++) {
+        // 如果有样章，继续执行
         if (elements[i].parentElement.textContent.includes("样章")) {
             continue
         }
