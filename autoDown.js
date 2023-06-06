@@ -6,6 +6,7 @@ function repeatProcess() {
     let elements = document.querySelectorAll('[id^="content-title-"]');
     let ids = [];
     for (let i = 0; i < elements.length; i++) {
+        //如何检查有样章字样，跳过
         if (elements[i].parentElement.textContent.includes("样章")) {
             continue
         }
